@@ -1,0 +1,10 @@
+footer {
+   width: 100%;
+   height: 150px;
+}
+
+.fa-3x {
+    font-size: 3em;
+    color: #A33B3B;
+    margin: 10px 5px;
+}
