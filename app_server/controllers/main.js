@@ -1,9 +1,9 @@
 /* GET home page */
 module.exports.index = function(req, res){
-    res.render('home', { title: 'Express' });
+    res.render('index', { title: 'Home' });
 };
 
-/* GET about page. */
+/* GET contact page. */
 module.exports.about = function(req, res){
     res.render('about', {title: 'About'});
 };
