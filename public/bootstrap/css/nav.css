@@ -1,6 +1,6 @@
 .navbar-default .navbar-brand {
     color: #A33B3B;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -10,10 +10,14 @@
 
 .navbar-default .navbar-nav > li > a {
     color: #A33B3B;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .navbar-default{
     background-color: RGBA(255, 255, 255, .5);
     border-color: #E7E7E7;
+}
+
+@media screen and (max-width: 767px){
+  .navbar-collapse{background:rgba(0,0,0,0.8);}
 }
