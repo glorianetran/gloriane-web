@@ -1,1 +1,165 @@
-<h1> hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include partials/head.ejs %>
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link href="/bootstrap/css/about.css" rel="stylesheet">
+        
+        <!--FAQ script-->
+    	<script>
+        	jQuery(document).ready(function() {
+        	function close_accordion_section() {
+        		jQuery('.accordion .accordion-section-title').removeClass('active');
+        		jQuery('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+        	}
+        
+        	jQuery('.accordion-section-title').click(function(e) {
+        		// Grab current anchor value
+        		var currentAttrValue = jQuery(this).attr('href');
+        
+        		if(jQuery(e.target).is('.active')) {
+        			close_accordion_section();
+        		}else {
+        			close_accordion_section();
+        
+        			// Add active class to section title
+        			jQuery(this).addClass('active');
+        			// Open up the hidden content panel
+        			jQuery('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+        		}
+        
+        		e.preventDefault();
+        	});
+        });
+	</script>
+	</head>
+    <body>
+        <% include partials/nav%>
+        
+        <div class="container">
+            <div class="jumbotron">
+                <h2 class="text-center rufina">About me</h2>
+                <strong><hr class="style"></strong> 
+                <br>
+                <div class="text-center rufina">
+                    <input type="button" class="button" onClick="document.getElementById('faq').scrollIntoView();" value="FAQ">
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="margin">
+                <h2 class="about-header rufina">Hey,</h2>
+                <br>
+                <div class="about-text oxygen">
+                   I'm Gloriane. I'm a senior studying Computer Science at Mills College. Currently, I'm looking
+                   for a job in mobile or web. 
+                </div>
+                <br>
+                <div class="about-text oxygen">Scroll further for more information about my skills. </div>
+                <br>
+                <hr class="style-2">
+                <br>
+                <h3 class="about-header rufina">Coding: <small>(Ordered by familiarity)</small></h3>
+                <br>
+                <div class="about-text-list oxygen">Java, JavaScript, HTML, CSS, SQL, PHP, Haskell</div>
+                <br>
+                <h3 class="about-header rufina">Frameworks:</h3>
+                <br>
+                <div class="about-text-list oxygen">MEAN, LAMP, Bootstrap</div>
+                <br>
+                <h3 class="about-header rufina">Development tools/experience:</h3>
+                <br>
+                <div class="about-text-list oxygen">Agile, Git, Heroku, Android Studio IDE, Cloud9, Eclipse IDE, Drupal</div>
+                <br>
+                <hr class="style-2"> 
+                <br>
+                <h3 class="about-header rufina">Education</h3>
+                <h4 class="about-text-resume oxygen">Mills College<small><i> (Expected Graduation 2018)</i></small>
+                <h4 class="about-text-resume oxygen">BA Computer Science</h4>
+                <h4 class="about-text-resume oxygen">GPA: 3.92</h4>
+                <br>
+                <h3 class="about-header rufina">Experience</h3>
+                <h4 class="about-text-resume oxygen">Android Development Teaching Assistant, Mission Bit<small><i> San Francisco, CA</i></small></h4>
+                <h4 class="about-text-resume oxygen">Research Intern, Pennsylvania State University<small><i> State College, PA</i></small></h4>
+                <h4 class="about-text-resume oxygen">Tech Intern, Brioxy<small><i> Oakland, CA</i></small></h4>
+                <br>
+                <h3 class="about-header rufina">Relevant Course Work</h3>
+                <h4 class="about-text-resume oxygen">Android Development</h4>
+                <h4 class="about-text-resume oxygen">iOS Development<small><i> In Progress</i></small></h4>
+                <h4 class="about-text-resume oxygen">Web Programming<small><i> MEAN stack</i> </small></h4>
+                <h4 class="about-text-resume oxygen">User Interface Design</h4>
+                <br>
+                <i><h5 class="oxygen">For more information about my professional skills please 
+                click <a href="https://drive.google.com/file/d/0B7LTg5vkTmfCWkQ1WWlfV2tndTNld3JjbjJ2OTZxSGRpb0Y0/view?usp=sharing" target="_blank"><b>here</b></a> for my resume.</h5></i>
+                <br>
+                <hr class="style-2">
+                <br>
+                
+                 <!-- FAQ --> 
+                <h2 id="faq" class="about-header rufina text-center">FAQ</h2>
+                <br>
+                <br>
+            	<div class="main">
+            		<div class="accordion">
+            	
+            			    <div class="accordion-section">
+            			    	<a class="accordion-section-title rufina" href="#accordion-1">Who are you?</a>
+            				    <div id="accordion-1" class="accordion-section-content">
+            					    <p class="about-faq oxygen">I'm Gloriane. Most people call me Glo. My life motto is to "Glo with the flow."</p>
+            				    </div><!--end .accordion-section-content-->
+            		       	</div><!--end .accordion-section-->
+            			    
+            			    <div class="accordion-section">
+            				    <a class="accordion-section-title rufina" href="#accordion-2">What do you do outside of class?</a>
+            				    <div id="accordion-2" class="accordion-section-content">
+            					    <p class="about-faq oxygen">I enjoy thinking about cool app ideas,
+            					    improving my general knowledge, finding time to volunteer,
+            					    and admiring the beauty of giraffes (and all animals). I'm also the presdient of the Mills Computer Club! </p>
+            				    </div><!--end .accordion-section-content-->
+            			    </div><!--end .accordion-section-->
+            
+            		    	<div class="accordion-section">
+            				    <a class="accordion-section-title rufina" href="#accordion-3">What are your career goals?</a>
+            				    <div id="accordion-3" class="accordion-section-content">
+                					<p class="about-faq oxygen">My short term goal is to get a job in mobile/web to get more experience as a developer. My long term goal is to 
+                					find a job where I can combine my passion for social justice and technology. I want to be able to help
+                					solve some of the world's most pressing issues with tech.</p>
+            				    </div><!--end .accordion-section-content-->
+            		    	</div><!--end .accordion-section-->
+            
+            			    <div class="accordion-section">
+            				    <a class="accordion-section-title rufina" href="#accordion-4">What are your strengths/weaknesses?</a>
+            				    <div id="accordion-4" class="accordion-section-content">
+            					    <p class="about-faq oxygen">My strengths are: being on time,
+            					    being organized, having a positive attitude, and embracing any confusion.
+            					    My weaknesses are: obsessing over minor details, not asking for help when needed, 
+            					    public speaking, and spelling (spell-check spoils me). 
+            					    </p>
+            				    </div><!--end .accordion-section-content-->
+            		       	</div><!--end .accordion-section-->
+            		       	
+            		       	<div class="accordion-section">
+            				    <a class="accordion-section-title rufina" href="#accordion-5">What is one cool thing you have done?</a>
+            				    <div id="accordion-5" class="accordion-section-content">
+            					    <p class="about-faq oxygen">In my 2nd year of college, I studied abroad in Budapest, Hungary at Aquincum Institute of Technology (AIT).
+            					    It was my first time leaving the United States. I traveled to 8 countries such as Spain, France, Denmark, etc. All of the images
+            					    used for this website were taken while I was abroad. <br><br>
+            					    </p>
+            					    <div class="text-center">
+            					        <h5 class="about-faq oxygen">Here's a picture of me worshipping a quiche the size of my face in Paris, France.</h5>
+            					        <img src="/images/quiche.jpg"></img>
+            					    </div>
+            					    <br>
+            				    </div><!--end .accordion-section-content-->
+            		       	</div><!--end .accordion-section-->
+            		       	
+                    </div><!--end .accordion-->
+            	</div><!--end .main-->
+            </div><!--end .margin-->
+        </div><!--end .container-->
+	</body>
+	
+	<% include partials/footer%>
+	
+</html>
