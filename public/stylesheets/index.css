@@ -48,3 +48,18 @@ hr.style {
 .home-header {
   font-weight: 800;
 }
+
+
+/*Responsive*/
+
+@media (max-width: 975px) {
+  .margin {
+    margin: 40px 60px;
+  }
+}
+
+@media (max-width: 470px) {
+  .margin {
+    margin: 30px 30px;
+  }
+}
