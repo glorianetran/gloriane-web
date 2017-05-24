@@ -12,3 +12,25 @@ footer {
 .fa-3x:hover {
     color: #333333;
 }
+
+a{
+  color: #A33B3B;   
+}
+
+a:hover{
+  color: #333333;   
+}
+
+a:focus{
+    color:#A33B3B;
+}
+
+span.glyphicon-envelope {
+    font-size: 2.5em;
+    margin: auto 5px;
+}
+
+.glyphicon{
+    top: 3px;
+}
+
