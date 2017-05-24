@@ -44,6 +44,10 @@ hr.style-2 {
     padding: 0px;
 }
 
+.margin {
+    margin: 90px 200px;
+}
+
 .about-text {
     font-size: 22px;
 }
@@ -63,10 +67,6 @@ hr.style-2 {
 
 .about-header {
     font-weight: 800;
-}
-
-.margin {
-    margin: 90px 200px;
 }
 
 

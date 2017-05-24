@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        
         <% include partials/head.ejs %>
         
-        <link href="/bootstrap/css/slick.css" rel="stylesheet" type="text/css">
-        <link href="/bootstrap/css/slick-theme.css" rel="stylesheet" type="text/css">
-        <link href="/bootstrap/css/project.css" rel="stylesheet" type="text/css">
+        <!--CSS for Slick-->
+        <link href="/stylesheets/slick/slick.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/slick/slick-theme.css" rel="stylesheet" type="text/css">
       
-        <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+        <!--JQuery for Slick-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="/bootstrap/js/slick.min.js"></script>
         
+        <!--Javascript for Slick-->
+        <script type="text/javascript" src="/javascript/slick.min.js"></script>
+        
+        <link href="/stylesheets/project.css" rel="stylesheet" type="text/css">
+        
+        <!--Slick Slider JQuery-->
         <script>
-
-        $(document).ready(function(){
-            $('.slider').slick({
-              dots: true,
-              arrows: true
+            $(document).ready(function(){
+                $('.slider').slick({
+                  dots: true,
+                  arrows: true
+                });
             });
-        });
-        
-
         </script>
 	</head>
+	
     <body>
         <% include partials/nav%>
         
@@ -226,8 +230,8 @@
                 
             </div><!--end .margin -->
         </div><!--end outer .container-->
-
 	</body>
 	
 	<% include partials/footer%>
+	
 </html>
