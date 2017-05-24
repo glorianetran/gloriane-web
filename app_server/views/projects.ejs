@@ -2,7 +2,27 @@
 <html lang="en">
     <head>
         <% include partials/head.ejs %>
-        <link href="/bootstrap/css/project.css" rel="stylesheet">
+        
+        <link href="/bootstrap/css/slick.css" rel="stylesheet" type="text/css">
+        <link href="/bootstrap/css/slick-theme.css" rel="stylesheet" type="text/css">
+        <link href="/bootstrap/css/project.css" rel="stylesheet" type="text/css">
+      
+        <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/bootstrap/js/slick.min.js"></script>
+        
+        <script>
+
+        $(document).ready(function(){
+            $('.slider').slick({
+              dots: true,
+              arrows: true
+            });
+        });
+        
+
+        </script>
 	</head>
     <body>
         <% include partials/nav%>
@@ -16,12 +36,198 @@
         
         <div class="container">
             <div class="margin">
-              
-            </div>
-        </div>
+                
+                <!--FindEatFood-->
+                <div class="container">
+                    <a href="https://github.com/ruellia/FindEatFood" target="_blank" class="projects-header rufina">FindEatFood</a>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="slider">
+                        <div>
+                            <img class="image-center" src="/images/findeatfood/home.png">
+                            <h3 class="slide_caption text-center oxygen">Home Page</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="image-center" src="/images/findeatfood/recipesearch.png">
+                            <h3 class="slide_caption text-center oxygen">Recipe Search Page</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="image-center" src="/images/findeatfood/dietary.png">
+                            <h3 class="slide_caption text-center oxygen">Dietary Restrictions Page</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="image-center" src="/images/findeatfood/recipeslist.png">
+                            <h3 class="slide_caption text-center oxygen">Recipe Search Results</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="image-center"  src="/images/findeatfood/reciperesult.png">
+                            <h3 class="slide_caption text-center oxygen">Recipe Detail Page</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="image-center"  src="/images/findeatfood/favorites.png">
+                            <h3 class="slide_caption text-center oxygen">Favorites Page</h3>
+                        </div>
+                     </div><!--end .slider-->
+                      
+                    <br>
+                    <div class="text-center"><h5><i class="oxygen">This app was created by a team of 5 students for 
+                    a Mobile App Development (Android) course at Mills College. </i></h5></div>
+                    <br>
+                    <div class="projects-text oxygen">
+                    Everyday, thousands of pounds of food get wasted and thrown away.
+                    Through wasting food, every year consumers experience a significant lost in their wages.
+                    Our app, FindEatFood, allows for users to search for recipes based on ingredients they list.
+                    By doing so, our app aims to limit down the amount of waste consumers produce while saving them money.
+                    <br><br>
+                    FindEatFood will enable users to:
+                    </div>
+                    <br>
+                    <div class="projects-text-small oxygen">
+                        <ul>
+                            <li>Search for recipes based on ingredients entered.</li>
+                            <li>Apply dietary restrictions on searches for recipes.</li>
+                            <li>Save favorite recipes in-app.</li>
+                        </ul>
+                    </div>
+                </div><!--end inner .container-->
+                
+                <br>
+                <hr class="style-2">
+                <br>
+                
+                <!--CitizensOrg-->
+                <div class="container">
+                    <a href="https://github.com/glorianetran/citizensorg" target="_blank" class="projects-header rufina">CitizensOrg</a>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="slider">
+                        <div>
+                            <img class="image-center" src="/images/citizensorg/home_copy.png">
+                            <h3 class="slide_caption text-center oxygen">Home Page</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="image-center" src="/images/citizensorg/login.png">
+                            <h3 class="slide_caption text-center oxygen">Signup/Login Page</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="image-center" src="/images/citizensorg/dashboard.png">
+                            <h3 class="slide_caption text-center oxygen">Dashboard</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="image-center" src="/images/citizensorg/upcomingActions.png">
+                            <h3 class="slide_caption text-center oxygen">Upcoming Actions Page</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="image-center" src="/images/citizensorg/findCongress.png">
+                            <h3 class="slide_caption text-center oxygen">Congressperson Search Page</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="image-center" src="/images/citizensorg/congress_results.png">
+                            <h3 class="slide_caption text-center oxygen">Congressperson Results Page</h3>
+                        </div>
+                    </div><!--end .slider-->
+                      
+                    <br>
+                    <div class="text-center"><h5><i class="oxygen">This app was created by a team of 4 students for 
+                    a Web Development (MEAN) course at Mills College. You can view the site 
+                    <a href="http://citizensorg.herokuapp.com/" target="_blank">here.</a></i></h5></div>
+                    <br>
+                    <div class="projects-text oxygen">
+                    As a group of concerned citizens, we recognized the need to have a central place 
+                    where concerned individuals can find information to stay politically informed and active.
+                    Our app, CitizensOrg, allows for users to serach for their local congressperson by zipcode and
+                    organize events through their dashboard.
+                    <br><br>
+                    CitizensOrg will enable users to:
+                    </div>
+                    <br>
+                    <div class="projects-text-small oxygen">
+                        <ul>
+                            <li>Search for their congressperson by zipcode.</li>
+                            <li>View their congressperson's contact information.</li>
+                            <li>Post actions.</li>
+                            <li>View upcoming actions.</li>
+                        </ul>
+                    </div>
+                </div><!--end inner .container-->
+                
+                <br>
+                <hr class="style-2">
+                <br>
+                
+                <!--Wake Up-->
+                <div class="container">
+                    <a href="https://github.com/memobelt/WakeUp" target="_blank" class="projects-header rufina">WakeUp</a>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="slider">
+                        <div>
+                            <img class="image-center" src="/images/wakeup/alarm.png">
+                            <h3 class="slide_caption text-center oxygen">Set Alarm</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="image-center" src="/images/wakeup/alarm_list.png">
+                            <h3 class="slide_caption text-center oxygen">Alarm List</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="image-center" src="/images/wakeup/equation.png">
+                            <h3 class="slide_caption text-center oxygen">Alarm Equation</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="image-center" src="/images/wakeup/stopwatch.png">
+                            <h3 class="slide_caption text-center oxygen">Stopwatch</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="image-center" src="/images/wakeup/timer.png">
+                            <h3 class="slide_caption text-center oxygen">Timer</h3>
+                        </div>
+                    </div><!--end .slider-->
+                      
+                    <br>
+                    <div class="text-center"><h5><i class="oxygen">This app was created by a team of 2 students for 
+                    a Mobile App Development (Android) course at Aquincum Institute of Technology (AIT) in Budapest.</i></h5></div>
+                    <br>
+                    <div class="projects-text oxygen">
+                    Most people will set an alarm everyday but still wake up late. This is 
+                    partially because of the snooze option. WakeUp is alarm app that 
+                    turns off ONLY if you solve an equation. Our app also includes a timer and stopwatch, 
+                    similar to Android's native alarm app. 
+                    <br><br>
+                    WakeUp will enable users to:
+                    </div>
+                    <br>
+                    <div class="projects-text-small oxygen">
+                        <ul>
+                            <li>Set an alarm.</li>
+                            <li>Set the alarm equation difficulty on a scale of 0 to 3.</li>
+                            <li>Change alarm notification sounds.</li>
+                            <li>Use a stopwatch with lap capabilities.</li>
+                            <li>Set a timer.</li>
+                        </ul>
+                    </div>
+                </div><!--end inner .container-->
+                
+            </div><!--end .margin -->
+        </div><!--end outer .container-->
 
 	</body>
 	
 	<% include partials/footer%>
-	
 </html>
