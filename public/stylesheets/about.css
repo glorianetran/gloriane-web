@@ -13,24 +13,23 @@ hr.style-2 {
 
 .button {
     border-radius: 0px;
-    color: #333333;
+    background: #A33B3B;
     font-size: 15px;
     font-weight: 500;
-    background: RGBA(255, 255, 255, .2);
     padding: 10px 20px 10px 20px;
     border: solid #333333 2px;
     outline: none !important;
 }
 
 .button:hover {
-    background: #A33B3B;
     text-decoration: none;
-    color: #333333;
+    background: #333333;
+    color: #A33B3B;
 }
 
 .jumbotron {
     margin-bottom: 0px;
-    padding: 9% 0;
+    padding: 8% 0;
     width: 100%;
     background-image: url("/images/about.jpg");
     background-size: 100% 100%;
@@ -133,13 +132,6 @@ a:hover {
     .jumbotron {
         padding: 12% 0;
     }
-    .button {
-        background: #A33B3B;
-    }
-    .button:hover {
-        background: #333333;
-        color: #A33B3B;
-    }
 }
 
 @media (max-width: 730px) {
@@ -154,13 +146,6 @@ a:hover {
     .jumbotron {
         padding: 15% 0px;
     }
-    .button {
-        background: #A33B3B;
-    }
-    .button:hover {
-        background: #333333;
-        color: #A33B3B;
-    }
 }
 
 @media (max-width: 450px) {
@@ -172,12 +157,5 @@ a:hover {
     }
     .jumbotron {
         padding: 23% 0;
-    }
-    .button {
-        background: #A33B3B;
-    }
-    .button:hover {
-        background: #333333;
-        color: #A33B3B;
     }
 }
