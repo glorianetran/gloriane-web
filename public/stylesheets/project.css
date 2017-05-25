@@ -66,7 +66,7 @@ hr.style-2 {
 .slick-prev:before,
 .slick-next:before {
     font-family: "Glyphicons Halflings", "slick", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .slick-prev:before {
@@ -93,6 +93,11 @@ hr.style-2 {
     margin: auto;
 }
 
+.image-center-2 {
+    margin: auto;
+    width: 100%;
+}
+
 .slide_caption {
     font-weight: bold;
     color: #A33B3B;
@@ -116,10 +121,19 @@ hr.style-2 {
     color: #A33B3B;
 }
 
+.slider {
+    margin: 0;
+}
+
+.slider .slide {
+    width: 100%;
+    height: 100%;
+}
+
 
 /*Responsive*/
 
-@media (max-width: 967px) {
+@media (max-width: 1260px) {
     html,
     body {
         width: auto !important;
@@ -133,7 +147,7 @@ hr.style-2 {
         margin: 40px 60px;
     }
     .jumbotron {
-        padding: 14% 0;
+        padding: 10% 0;
     }
     .button {
         background: #A33B3B;
@@ -144,12 +158,7 @@ hr.style-2 {
     }
 }
 
-.slide {
-    width: 100%;
-    height: 100% margin: auto;
-}
-
-@media (max-width: 730px) {
+@media (max-width: 970px) {
     html,
     body {
         width: auto !important;
@@ -163,7 +172,7 @@ hr.style-2 {
         margin: 30px 30px;
     }
     .jumbotron {
-        padding: 18% 0px;
+        padding: 14% 0px;
         width: 100%;
     }
     .button {
