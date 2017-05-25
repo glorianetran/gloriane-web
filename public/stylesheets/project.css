@@ -120,6 +120,15 @@ hr.style-2 {
 /*Responsive*/
 
 @media (max-width: 967px) {
+    html,
+    body {
+        width: auto !important;
+        overflow-x: hidden !important;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 25px;
+    }
     .margin {
         margin: 40px 60px;
     }
@@ -136,6 +145,15 @@ hr.style-2 {
 }
 
 @media (max-width: 730px) {
+    html,
+    body {
+        width: auto !important;
+        overflow-x: hidden !important;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 0px;
+    }
     .margin {
         margin: 30px 30px;
     }
@@ -157,6 +175,10 @@ hr.style-2 {
     body {
         width: auto !important;
         overflow-x: hidden !important;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 0px;
     }
     hr.style {
         width: 300px;
