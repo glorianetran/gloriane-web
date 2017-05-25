@@ -33,7 +33,8 @@ hr.style-2 {
     padding: 9% 0;
     width: 100%;
     background-image: url("/images/projects.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
+    background-position: 0 0;
     height: 400px;
 }
 
@@ -113,4 +114,64 @@ hr.style-2 {
 
 .slick-dots li.slick-active button:before {
     color: #A33B3B;
+}
+
+
+/*Responsive*/
+
+@media (max-width: 967px) {
+    .margin {
+        margin: 40px 60px;
+    }
+    .jumbotron {
+        padding: 14% 0;
+    }
+    .button {
+        background: #A33B3B;
+    }
+    .button:hover {
+        background: #333333;
+        color: #A33B3B;
+    }
+}
+
+@media (max-width: 730px) {
+    .margin {
+        margin: 30px 30px;
+    }
+    .jumbotron {
+        padding: 18% 0px;
+        width: 100%;
+    }
+    .button {
+        background: #A33B3B;
+    }
+    .button:hover {
+        background: #333333;
+        color: #A33B3B;
+    }
+}
+
+@media (max-width: 480px) {
+    html,
+    body {
+        width: auto !important;
+        overflow-x: hidden !important;
+    }
+    hr.style {
+        width: 300px;
+    }
+    .margin {
+        margin: 30px 30px;
+    }
+    .jumbotron {
+        padding: 26% 0;
+    }
+    .button {
+        background: #A33B3B;
+    }
+    .button:hover {
+        background: #333333;
+        color: #A33B3B;
+    }
 }
