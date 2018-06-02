@@ -1,42 +1,633 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <% include partials/head.ejs %>
-        <link href="/stylesheets/index.css" rel="stylesheet">
-	</head>
-	
+        <meta charset="utf-8">
+        <title></title>
+        <!--jQuery-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/stylesheets/pe-icon-7-stroke.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/stylesheets/et-line-icons.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/stylesheets/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/stylesheets/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/stylesheets/theme-startup.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/stylesheets/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/font-opensans.css" rel="stylesheet" type="text/css">
+       
+    </head>
+
     <body>
-        
-        <% include partials/nav%>
-        
-        <div class="jumbotron">
-            <h1 class="text-center rufina">Hi, I'm Gloriane.</h1>
-            <strong><hr class="style"></strong> 
-            <br>
-            <div class="text-center rufina">
-                <a href="/about" class="button">Learn About Me</a>
-                <a href="mailto:glorianetran@gmail.com" class="button">Contact Me</a>
-            </div>    
-        </div>
-        
-        <div class="container">
-            <div class="margin">
-                <div class="home-header">
-                    <h2 class="home-header rufina">Greetings Visitor.</h2>
+				
+		<div class="nav-container"><nav>
+		        <div class="nav-bar" data-spy="affix" data-offset-top="90">
+		            <div class="module left">
+		                <a href="/">
+		                    <img class="logo logo-light" alt="Gloriane" src="/images/glo.png">
+		                    <div class="vnu"><img class="logo logo-dark" alt="Gloriane" src="/images/glo.png"></div>
+		                </a>
+		            </div>
+		            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+		                <i class="ti-menu"></i>
+		            </div>
+		            <div class="module-group right">
+		                <div class="module left">
+		                    <ul class="menu">
+		                        <li>
+		                            <a href="#about">About</a>
+		                        </li><li class="vpf">
+		                            <a href="#skills" class="inner-link" target="_self">Skills</a>
+		                        </li><li class="vpf">
+		                            <a href="#education" class="inner-link" target="_self">Education</a>
+		                        </li><li class="vpf">
+		                            <a href="#experience" class="inner-link" target="_self">Experience</a>
+		                        </li><li class="vpf">
+		                            <a href="#projects" class="inner-link" target="_self">Projects </a>
+		                        </li><li class="vpf">
+		                            <a href="#faq" class="inner-link" target="_self">FAQ</a>
+		                        </li>
+		                        
+		                        
+		                    </ul>
+		                </div>
+		            </div>
+		            
+		        </div>
+		    </nav>
+		
+		</div>
+		
+		<div class="main-container">
+		
+			<section class="cover fullscreen image-slider slider-all-controls controls-inside parallax">
+		        <ul class="slides">
+		            <li class="overlay image-bg">
+		                <div class="background-image-holder">
+		                    <img alt="image" class="background-image" src="/images/home.jpg">
+		                </div>
+		                <div class="container v-align-transform">
+		                    <div class="row">
+		                        <div class="col-md-6 col-sm-8">
+		                            <h1 class="mb40 mb-xs-16 large">Gloriane Tran</h1>
+		                            <h5 class="uppercase mb16"><b>Developer</b></h5>
+		                            <p class="lead mb40">Hi, I'm Glo. I can help you build apps and websites.</p>
+		                            <div class="social">
+		                            	<a class="fa fa-github" title="" target="_blank" href="https://github.com/glorianetran"></a>
+		                            	<a class="fa fa-linkedin" title="" target="_blank" href="https://www.linkedin.com/in/gloriane-tran-ab8592a7/"></a>
+		                        </div>
+		                    </div>
+		                    
+		                </div>
+		                
+		            </li>
+		        </ul>
+		    </div>
+		    </section><section class="bg-secondary" id="about">
+		        <div class="container">
+		            <div class="row v-align-children">
+		                <div class="col-md-4 col-sm-5 mb-xs-24">
+		                    <h2>About Me</h2>
+		                    <p class="p-spacing" style = "font-size:18px">Hellooooo! My name is Gloriane, but most people call me Glo. I'm from San Francisco, CA and I am currently an Android intern at ZapLabs. </p>
+		                    <p style = "font-size:18px"> Some of my passions are: playing sports,
+		                    brainstorming startup ideas, spending time with my loved ones, improving my general knowledge, and admiring the beauty of giraffes (and all animals). </p>
+		                </div>
+		                <div class="col-md-7 col-md-offset-1 col-sm-6 col-sm-offset-1 text-center">
+		                    <img class="cast-shadow" alt="Screenshot" src="/images/glo.jpg">
+		                </div>
+		            </div>
+		            
+		        </div>
+		        
+		    </section><section>
+		        <div class="container" id="skills">
+		            <div class="row">
+		                <div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
+		                    <h2>Skills</h2>
+		                    <br>
+		                    <div class="tabbed-content icon-tabs">
+		                        <ul class="tabs">
+		                            <li class="active">
+		                                <div class="tab-title">
+		                                    <i class="icon et-line-laptop"></i>
+		                                    <span>Languages</span>
+		                                </div>
+		                                <div class="tab-content">
+		                                   <img alt="image" src="/images/graph2.png">
+		                                </div>
+		                            </li>
+		                            <li>
+		                                <div class="tab-title">
+		                                    <i class="icon ti ti-home"></i>
+		                                    <span>FrameWorks</span>
+		                                </div>
+		                                <div class="tab-content">
+		                                   		<p style = "font-size:18px"><b>MEAN</b></p>
+		                                   		<p style = "font-size:18px"><b>LAMP</b></p>
+		                                   		<p style = "font-size:18px"><b>RAILS</b></p>
+		                                   		<p style = "font-size:18px"><b>libGDX</b></p>
+		                                   </div>
+		                            </li>
+		                            <li>
+		                                <div class="tab-title">
+		                                    <i class="icon pe-7s-hammer"></i>
+		                                    <span>Tools</span>
+		                                </div>
+		                                <div class="tab-content">
+		                                	<p style = "font-size:18px"><b>Git</b></p>
+	                                   		<p style = "font-size:18px"><b>Android Studio</b></p>
+	                                   		<p style = "font-size:18px"><b>XCode</b></p>
+	                                   		<p style = "font-size:18px"><b>Heroku</b></p>
+	                                   		<p style = "font-size:18px"><b>Cloud9</b></p>
+	                                   		<p style = "font-size:18px"><b>Eclipse</b></p>
+		                                </div>
+		                            </li>
+		                             <li>
+		                                <div class="tab-title">
+		                                    <i class="icon fa fa-code"></i>
+		                                    <span>Dev</span>
+		                                </div>
+		                                <div class="tab-content">
+		                                	<p style = "font-size:18px"><b>Agile Development/Scrum</b></p>
+	                                   		<p style = "font-size:18px"><b>MVC (Model View Controller)</b></p>
+		                                </div>
+		                            </li>
+		                        </ul>
+		                    </div>
+		                    
+		                </div>
+		            </div>
+		            
+		        </div>
+		        
+		    </section><section class="image-bg overlay-light pt180 pb180 pt-xs-80 pb-xs-80 parallax">
+				<div class="background-image-holder" id="education">
+					<img alt="image" class="background-image" src="/images/mills.jpg">
+				</div>
+				
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5 col-sm-6 col-md-push-0">
+							<h2 id="dark"> Education</h2>
+							<p id="dark" class="lead mb-xs-32">Mills College</p>
+									<p id="dark" class="lead mb-xs-32">BA Computer Science</p>
+									<p id="dark" class="lead mb-xs-32">3.9 GPA</p>
+									<p id="dark" class="lead mb-xs-32">2014 - 2018</p>
+						</div>
+					</div>
+					
+				</div>
+				
+			</section>
+			
+			<section id ="experience">
+		        <div class="container">
+		        	   <h2 align="center">Experience</h2>
+		        	   <i align="center"><p>Click here to check out my <a href="https://drive.google.com/open?id=1WDkYLtnvPML2saGC8gG2qFkQGYids5wl" target="_blank"><b>resume</b></a>!</p></i><br><br>
+
+		            <div class="row">
+		                
+		                <div class="col-sm-6">
+		                    <div class="feature feature-1 boxed">
+		                        <div class="text-center">
+		                            <i class="icon et-line-mobile"></i>
+		                            <h4>Android Intern</h4>
+		                            <p style="font-size:16px">ZapLabs</p>
+		                            <p style="font-size:14px"><i>June 2018 - Present</i></p>
+		                        </div>
+		                        <p align="center">This section will be updated shortly.</p><br><br>
+		                    </div>
+		                    
+		                </div><div class="col-sm-6">
+		                    <div class="feature feature-1 boxed">
+		                        <div class="text-center">
+		                            <i class="icon ti ti-pencil"></i>
+		                            <h4>Research Assistant</h4>
+		                            <p style="font-size:16px">Mills College</p>
+		                            <p style="font-size:14px"><i>January 2018 - May 2018</i></p>
+		                        </div>
+		                        <p> As a teaching assistant I held lab hours, graded homework, and wrote code (for other TAs to grade with) for the Intermediate Programming class at Mills. The main tools 
+		                        used for this position were Java and Eclipse. </p>
+		                    </div>
+		               </div>
+		               </div>
+		               
+		               <div class ="row">
+		                
+		                <div class="col-sm-6">
+		                    <div class="feature feature-1 boxed">
+		                        <div class="text-center">
+		                            <i class="icon ti ti-ruler-pencil"></i>
+		                            <h4>Instructor</h4>
+		                            <p style="font-size:16px">Mission Bit</p>
+		                            <p style="font-size:14px"><i>August 2017 - December 2017</i></p>
+		                        </div>
+		                        <p>At Mission Bit, I taught high school students how to make games on Android phones.
+		                        We used Java in conjunction with libGDX, a gaming framework, to create desktop and mobile games.
+		                        The main tools used were Android Studio, Java, libGDX, and Git. </p>
+		                    </div>
+		                    
+		                </div>
+		                <div class="col-sm-6">
+		                  <div class="feature feature-1 boxed">
+		                        <div class="text-center">
+		                            <i class="icon et-line-magnifying-glass"></i>
+		                            <h4>Research Intern</h4>
+	                                <p style="font-size:16px">Pennsylvania State University</p>
+		                            <p style="font-size:14px"><i>June 2016 - August 2016</i></p>
+		                        </div>
+		                        <p> I built the front end for a research project that focused on how peer pressure can affect shared preferences on social media. 
+		                        I used HTML, CSS, Javascript, PHP, and Drupal (CMS) for development.</p> <br>
+		                    </div>
+		                    
+		                </div>
+		                    
+	                    </div>
+	                </div>
+		                
+	            </div>
+		            
+	        </div>
+		        
+		    </section><section class="projects bg-dark" id ="projects">
+		        <div class="container">
+		        	<h2 class="light" align="center">Projects</h2><br><br>
+		            <div class="masonry-loader">
+		                <div class="col-sm-12 text-center">
+		                    <div class="spinner"></div>
+		                </div>
+		            </div>
+		            <div class="row masonry masonryFlyIn">
+		                <div class="col-sm-4 masonry-item project" data-filter="People">
+		                    <div class="image-tile hover-tile text-center">
+		                        <img alt="image" class="background-image" src="/images/techstudio.jpg">
+		                        <div class="hover-state">
+		                            <a href="#projectModal1" data-toggle="modal">
+		                                <h3 class="uppercase mb8">TechStudio</h3>
+		                                <h6 class="uppercase">Ruby on Rails</h6>
+		                            </a>
+		                        </div>
+		                    </div>
+		                    
+		                </div>
+		                <div class="col-sm-4 masonry-item project" data-filter="People">
+		                    <div class="image-tile hover-tile text-center">
+		                        <img alt="image" class="background-image" src="/images/findeatfood.jpeg">
+		                        <div class="hover-state">
+		                            <a href="#projectModal2" data-toggle="modal">
+		                                <h3 class="uppercase mb8">FindEatFood</h3>
+		                                <h6 class="uppercase">Android</h6>
+		                            </a>
+		                        </div>
+		                    </div>
+		                    
+		                </div>
+		                
+		                <div class="col-sm-4 masonry-item project" data-filter="People">
+		                    <div class="image-tile hover-tile text-center">
+		                        <img alt="image" class="background-image" src="/images/citizens.jpg">
+		                        <div class="hover-state">
+		                            <a href="#projectModal3" data-toggle="modal">
+		                                <h3 class="uppercase mb8">CitizensOrg</h3>
+		                                <h6 class="uppercase">MEAN</h6>
+		                            </a>
+		                        </div>
+		                    </div>
+		                    
+		                </div>
+		            </div>
+		            
+		        </div>
+		        
+		    </section><section id="faq">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-sm-12 text-center">
+		                    <h2 class="mb16">FAQ</h2>
+		                    <p class="lead mb64"> </p>
+		                </div>
+		            </div>
+		            
+		            <div class="row">
+		                <div class="col-sm-10 col-sm-offset-1">
+		                    <ul class="accordion accordion-2 one-open">
+		                        <li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0">Who are you?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <p style="font-size:20px"> My name is Gloriane but everyone calls me Glo. I am a mobile developer, a tech pun abuser, a corgi lover, a giraffe enthusiast, and a Bay Area sports fanatic.</p>
+		                            </div>
+		                        </li>
+		                        <li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0">What do you do outside of work?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <p style="font-size:20px"> I like spending my time improving my general knowledge and developing side projects.
+		                                But if I'm feeling lazy I like spending my days binging anime, reading manga, watching youtube videos, or spending time with my loved ones.
+		                                </p>
+		                            </div>
+		                        </li>
+		                        <li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0">What are your career goals?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <p style="font-size:20px">
+		                                     Short term, I want to gain experience working in the tech industry. 
+		                                     Long term, I want to start my own company or nonprofit. I have a couple ideas that I would like to get started on. Check on me again in 5-10 years!
+		                                </p>
+		                            </div>
+		                        </li>
+		                        <li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0">What's your developer story?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <p style="font-size:20px"> I entered college intending on majoring in Public Policy. But I quickly realized that policy change is a long road. I happened to be taking
+		                                a Computer Science class at the time and instantly fell in love with the logical thinking. Tech is everywhere and I figured that I could make my impact on the world through tech. 
+		                                Now here I am, kickstarting my career as a developer.
+		                                </p>
+		                            </div>
+		                        </li>
+		                    </ul>
+		                    
+		                </div>
+		            </div>
+		            
+		        </div>
+		        
+		    </section><footer class="footer-2 bg-dark text-center-xs">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<a href="#"><img class="image-xxs fade-half" alt="Pic" src="images/glo-dark.jpg"></a>
+						</div>
+					
+						<div class="col-sm-4 text-center">
+							<span class="fade-half">
+								© Copyright Gloriane Tran 2018
+							</span>
+						</div>
+					
+						<div class="col-sm-4 text-right text-center-xs">
+							<ul class="list-inline social-list">
+								<li><a href="https://github.com/glorianetran"><i class="ti-github"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/gloriane-tran-ab8592a7/"><i class="ti-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
+		
+		<!--PROJECT MODALS -->
+		
+	<div class="portfolio-modal modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
                 </div>
-                <br>
-                <div class="home-text oxygen">
-                    My name is Gloriane Tran and I am a senior studying Computer Science at Mills College in Oakland, CA. 
-                    Currently I am pursuing a job in mobile or web development. 
-                    Some of my passions are thinking of new app ideas, learning about third party libraries, 
-                    spending time with my loved ones, improving my general knowledge, tasting new foods,
-                    and admiring the beauty of giraffes (and all animals). 
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h3 align="center">TechStudio</h3>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-8">
+                              <img class="img-fluid img-centered" src="/images/techstudio-home.png" alt="">
+                              </div>
+                              <div class="col-md-4">
+                                <p class = "p-spacing" style="font-size:20px;"> TechStudio is a place to foster interdisciplinary tech projects. 
+                                Artists, hobbyists, developers, etc. can collaborate on the site. This website was created for a Software Engineering class at Mills College.</p>
+                                
+                                <h5><b> Some Features</b></h5>
+                                <ul>
+								  <li style="font-size:15px">Third Party Sign-In</li>
+								  <li style="font-size:15px">Collaboration on project with other users</li>
+								  <li style="font-size:15px">Project Chatroom</li>
+								</ul>  
+
+                                <ul>
+                                    <span><strong style="font-size: 15px"><li> GitHub:
+                                        <strong>
+                                          <a href="https://github.com/glorianetran/TechStudio" target="_blank"> https://github.com/glorianetran/TechStudio </a>
+                                        </strong>
+                                    </li></strong></span>
+                                    <span><strong style="font-size: 15px"><li> Website:
+                                        <strong>
+                                          <a href="https://tech-studio.herokuapp.com/" target="_blank">https://tech-studio.herokuapp.com/</a>
+                                        </strong>
+                                    </li></strong>
+                                    <span><strong style="font-size: 15px"><li> Company:
+                                        <strong>
+                                          <span>Mills College</span>
+                                        </strong>
+                                    </li></strong></span>
+                                    <strong style="font-size: 15px"><li> Development:
+                                        <strong>
+                                          <span>Ruby on Rails</span>
+                                        </strong>
+                                    </li></strong>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                          </div>
+                        </div>
                 </div>
             </div>
-        </div><!--end .container-->
+            </div>
+        </div>
+    </div> 
+		
+		
+		<div class="portfolio-modal modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h3 align="center">FindEatFood</h3>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-2"></div>
+                              <div class="col-md-4">
+                              <img class="img-fluid img-centered" src="/images/findeatfood/home.png" alt="">
+                              </div>
+                              <div class="col-md-4">
+                                <p class = "p-spacing" style="font-size:20px;"> FindEatFood, allows users to search for recipes based on ingredients they list. This app was created 
+                                at Mills College for an Android Development class.</p>
+                                
+                                <h5><b> Some Features</b></h5>
+                                <ul>
+								  <li style="font-size:15px">Search for recipes based on ingredients entered</li>
+								  <li style="font-size:15px">Apply dietary restrictions on searches for recipes</li>
+								  <li style="font-size:15px">Save favorite recipes in-app</li>
+								</ul>  
+
+                                <ul>
+                                    <span><strong style="font-size: 15px"><li> GitHub:
+                                        <strong>
+                                          <a href="https://github.com/ruellia/FindEatFood" target="_blank"> https://github.com/ruellia/FindEatFood </a>
+                                        </strong>
+                                    </li></strong></span>
+                                    <span><strong style="font-size: 15px"><li> Company:
+                                        <strong>
+                                          <span>Mills College</span>
+                                        </strong>
+                                    </li></strong></span>
+                                    <strong style="font-size: 15px"><li> Development:
+                                        <strong>
+                                          <span>Java, Android</span>
+                                        </strong>
+                                    </li></strong>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                            <div class="col-md-2"></div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    	<div class="portfolio-modal modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h3 align="center">CitizensOrg</h3>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-8">
+                              <img class="img-fluid img-centered" src="/images/citizensorg/home.png" alt="">
+                              </div>
+                              <div class="col-md-4">
+                                <p class = "p-spacing" style="font-size:20px;"> CitizensOrg, allows for users to serach for their local congressperson 
+                                by zipcode and organize events through their dashboard. This website was created for a Web Programming class at Mills College. </p>
+                                
+                                <h5><b> Some Features</b></h5>
+                                <ul>
+								  <li style="font-size:15px">Search for their congressperson by zipcode</li>
+								  <li style="font-size:15px">View their congressperson's contact information</li>
+								  <li style="font-size:15px">Post/View actions </li>
+								</ul>  
+
+                                <ul>
+                                    <span><strong style="font-size: 15px"><li> GitHub:
+                                        <strong>
+                                          <a href="https://github.com/glorianetran/citizensorg" target="_blank"> https://github.com/glorianetran/citizensorg</a>
+                                        </strong>
+                                    </li></strong></span>
+                                    <span><strong style="font-size: 15px"><li> Website:
+                                        <strong>
+                                          <a href="https://citizensorg.herokuapp.com/" target="_blank">https://citizensorg.herokuapp.com/</a>
+                                        </strong>
+                                    </li></strong>
+                                    <span><strong style="font-size: 15px"><li> Company:
+                                        <strong>
+                                          <span>Mills College</span>
+                                        </strong>
+                                    </li></strong></span>
+                                    <strong style="font-size: 15px"><li> Development:
+                                        <strong>
+                                          <span>MongoDB, Express, Angular, Node.js</span>
+                                        </strong>
+                                    </li></strong>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+				
+	<script src="/javascript/jquery.min.js"></script>
+        <script src="/javascript/bootstrap.min.js"></script>
+        <script src="/javascript/flexslider.min.js"></script>
+        <script src="/javascript/masonry.min.js"></script>
+        <script src="/javascript/smooth-scroll.min.js"></script>
+        <script src="/javascript/parallax.js"></script>
+        <script src="/javascript/scripts.js"></script>
+  
+    <script src="/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/javascript/jquery.easing.min.js"></script>
+    <script src="/javascript/counter/jquery.waypoints.min.js"></script>
+    <script src="/javascript/counter/jquery.counterup.min.js"></script>
+    <script src="/javascript/custom.js"></script>
+    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+
+        $(".filter-b").click(function(){
+            var value = $(this).attr('data-filter');
+            if(value == "all")
+            { 
+                $('.filter').show('1000');
+            }
+            else
+            { 
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');
+            }
+        });
         
-	</body>
-	
-	<% include partials/footer%>
-	
+        if ($(".filter-b").removeClass("active")) {
+          $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+        });
+
+        // SKILLS
+        $(function () {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 2000
+            });
+
+        });
+    </script> 
+    </body>
 </html>
