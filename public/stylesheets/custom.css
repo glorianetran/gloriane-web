@@ -1,0 +1,134 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+
+.menu li a {
+    font-size: 13px;
+    color: black;
+    opacity: 1.0;
+}
+
+.menu li a:hover {
+    color: #5edcd0;
+}
+
+.btn-white:hover,
+.image-bg .btn:hover,
+.image-bg .btn:visited:hover {
+    background: #5edcd0;
+    color: black;
+    border-color: #xc;
+    opacity: 1.0;
+}
+
+
+.section.image-bg overlay pt180 pb180 pt-xs-80 pb-xs-80 parallax .overlay:before {
+    background: #fff;
+}
+
+#dark {
+    color: black;
+}
+
+#light {
+    opacity: 0.7;
+}
+
+.overlay-light:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    opacity: 0.3;
+    z-index: 2;
+}
+
+p.lead {
+    font-size: 22px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 350;
+}
+
+h1.large {
+    font-weight: 350;
+}
+
+
+.social [class*="fa fa-"] {
+    background-color: #fff;
+    border-radius: 50px;
+    color: #333;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 15px;
+    width: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.fa-github:hover {
+    background-color: #5edcd0;
+}
+
+.fa-linkedin:hover {
+    background-color: #5edcd0;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.p-spacing {
+    margin-bottom: 35px;
+}
+
+.nav-bar {
+    width: 100%;
+    background: #fff;
+}
+
+.portfolio-modal .modal-dialog {
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    border: none;
+    border-radius: 0;
+    background-clip: border-box;
+    box-shadow: none;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+}
+
+h5 {
+    margin-bottom: 5px;
+}
+
+
+.btn-white,
+.image-bg .btn,
+.image-bg .btn:visited {
+    border-color: #5edcd0;
+    color: #000;
+}
+
+hr {
+    border-color: #5edcd0;
+}
